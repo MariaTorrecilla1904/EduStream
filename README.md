@@ -6,7 +6,6 @@ Niveles Interactivos: Escena de menú principal y nivel de aprendizaje.
 
 Mecánica de Preguntas: Sistema de Verdadero/Falso con retroalimentación inmediata.
 
-Animaciones Dinámicas: El personaje principal (Pingüino) salta y avanza con cada respuesta correcta.
 
 Sistema de Puntos: Acumulación de puntaje por cada acierto.
 
