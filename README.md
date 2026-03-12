@@ -12,9 +12,9 @@ Sistema de Puntos: Acumulación de puntaje por cada acierto.
 Interfaz de Usuario (UI): Diseño colorido y adaptado para entornos educativos.
 
  Tecnologías Utilizadas
-Motor de Juego: Unity 2022.3 LTS (o la versión que estés usando).
+Motor de Juego: Unity 2022.3 
 
-Lenguaje de Programación: C# (C-Sharp).
+Lenguaje de Programación: C# 
 
 Arte: Sprites 2D y animaciones de Nine Pines Animation.
 
