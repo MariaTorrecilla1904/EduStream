@@ -1,23 +1,43 @@
- EduStream - Juego Educativo de Sistemas
-EduStream es un juego interactivo desarrollado en Unity diseñado para enseñar conceptos básicos de arquitectura de computadores y sistemas de una manera divertida. 
-
-Características del Juego
-Niveles Interactivos: Escena de menú principal y nivel de aprendizaje.
-
-Mecánica de Preguntas: Sistema de Verdadero/Falso con retroalimentación inmediata.
 
 
-Sistema de Puntos: Acumulación de puntaje por cada acierto.
+🦊 EduStream: Videojuego Educativo 2D en Unity 6
+EduStream es un proyecto interactivo desarrollado como herramienta de aprendizaje. Combina mecánicas de plataformas en 2D con un sistema de evaluación lógica para resolver preguntas técnicas.
 
-Interfaz de Usuario (UI): Diseño colorido y adaptado para entornos educativos.
+🚀 Descripción del Proyecto
+El jugador controla un personaje (Zorro) en un entorno de exploración. El objetivo es dirigirse hacia un punto de interés (un buzón/cartel) que funciona como portal hacia el nivel de evaluación. Una vez allí, el usuario debe responder preguntas de opción múltiple para ganar puntos y progresar.
 
- Tecnologías Utilizadas
-Motor de Juego: Unity 2022.3 
+🎮 Implementación de Eventos Principales
+El núcleo del proyecto se basa en 3 eventos fundamentales que gestionan la lógica del juego:
 
-Lenguaje de Programación: C# 
+1. Evento de Navegación (Transición de Escena)
+Mecánica: Cambio de nivel al contacto físico.
 
-Arte: Sprites 2D y animaciones de Nine Pines Animation.
+Técnica: Se utiliza un Box Collider 2D en modo Is Trigger en el objeto "Buzón". Al detectar la colisión con el tag Player, se dispara el método SceneManager.LoadScene.
 
-Escenarios: Pixel Skies DEMO.
+2. Evento de Interacción (Interfaz de Usuario)
+Mecánica: Feedback visual inmediato tras la respuesta.
 
-AUTOR: Mariapi
+Técnica: Los botones de "Verdadero" y "Falso" utilizan el sistema OnClick. Al ser presionados, activan un mensaje en pantalla (UI Text) que indica el resultado de la elección.
+
+3. Evento de Progresión (Sistema de Puntuación)
+Mecánica: Actualización de datos del jugador.
+
+Técnica: Una función lógica evalúa si la respuesta es correcta. Si se cumple la condición, se suma +10 a una variable de tipo int y se refresca el texto del contador de puntos en la interfaz.
+
+🛠️ Detalles Técnicos
+Motor: Unity 6 (6000.0.5f1).
+
+Gráficos: Estética Pixel Art. Los sprites están configurados con Filter Mode: Point para máxima nitidez y el suelo utiliza el modo Tiled para evitar distorsiones.
+
+Control: Script en C# compatible con el nuevo Input System y el sistema clásico (Active Input Handling: Both).
+
+Físicas: Uso de Rigidbody 2D con rotación bloqueada en el eje Z para un movimiento estable.
+
+📂 Cómo probar el proyecto
+Descarga el repositorio.
+
+Abre la carpeta en Unity Hub.
+
+Asegúrate de que todas las escenas estén añadidas en File > Build Settings.
+
+¡Dale a Play en la escena de Inicio!
